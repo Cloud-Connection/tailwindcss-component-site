@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/prism.css">
+
+
+    <style>
+      #pad{
+         padding: 10x;
+      }
+    </style>
+
+
+</head>
+
+
+<body class="">
+
+    <!--side navigation bar -->
+    <nav class="p-5 bg-white md:flex md:items-center md:justify-between shadow-lg">
+        <div>
+            <span class="cursor text-2xl font-bold font-[Poppins]">
+                Website
+            </span>
+        </div>
+
+        <div>
+            <input class="px-3 border-gray-200 hover:border-gray-600 focus:border-gray-600 py-2 rounded-md outline-none bg-gray-100" type="search" placeholder="Search component">
+        </div>
+
+        <ul class="md:flex md:items-center">
+            <li class="mx-4">
+                <a class="text-xl hover:text-cyna-500 duration-500 font-semibold" href="">Home</a>
+            </li>
+
+            <li class="mx-4">
+                <a class="text-xl hover:text-cyna-500 duration-500 font-semibold" href="">Blog</a>
+            </li>
+
+            <li class="mx-4">
+                <a class="text-xl hover:text-cyna-500 duration-500 font-semibold" href="">Contact</a>
+            </li>
+
+            <li class="mx-4">
+                <a class="text-xl hover:text-cyna-500 duration-500 font-semibold" href="">About</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    
+
+
+<div class="flex">
+    <aside class="w-64 mt-4" aria-label="Sidebar">
+        <div class="overflow-y-auto py-4 px-3 bg-gray-50 rounded dark:bg-gray-800">
+           <a href="#" class="flex items-center pl-2.5 mb-5">
+              <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Components</span>
+           </a>
+           
+           <ul class="space-y-2">
+              <li>
+                 <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700">
+                    <span class="ml-3 font-semibold">Accordion</span>
+                 </a>
+              </li>
+              <li>
+                 <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700">
+                    <span class="flex-1 ml-3 whitespace-nowrap font-semibold">Alerts</span>
+                 </a>
+              </li>
+              <li>
+                 <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700">
+                    <span class="flex-1 ml-3 whitespace-nowrap font-semibold">Buttons</span>
+                 </a>
+              </li>
+              <li>
+                 <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700">
+                    <span class="flex-1 ml-3 whitespace-nowrap font-semibold">Cards</span>
+                 </a>
+              </li>
+              <li>
+                 <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700">
+                    <span class="flex-1 ml-3 whitespace-nowrap font-semibold">Footers</span>
+                 </a>
+              </li>
+              <li>
+                 <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700">
+                    <span class="flex-1 ml-3 whitespace-nowrap font-semibold">Navbars</span>
+                 </a>
+              </li>
+           </ul>
+        </div>
+     </aside>
+     
+    <main class="flex-1 ml-4 mt-4">
+        <div class="h-96 p-10">
+
+         <section class="my-2 p-2">
+            <div class="py-2">
+               <h1 class="font-semibold font-[Poppins] text-3xl">Default alert</h1>
+               <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, in.</p>
+            </div>
+
+            
+            <div class="flex justify-center border-2 px-2 py-3 rounded" style="width: 900px;">
+
+               <button onclick="desktopview()" class="mr-4">
+                  <img src="/icons/desktop.png" alt="">
+               </button>
+
+               <button onclick="tabletview()" class="mr-4">
+                  <img src="/icons/tablet_icon.png" alt="">
+               </button>
+
+
+               <button type="submit" onclick="mobileview()">
+                  <img src="/icons/x_mobile_icon.png" alt="">
+               </button>
+            </div>
+
+            <div class="justify-center mb-8">
+               <iframe class="bg-white py-10" id="pad" title="component display" src="/components/alerts.html" scrolling="" height="300" width="900px" frameborder="2">
+               </iframe> 
+            </div>
+
+            <div class="border-2 px-2 py-3 rounded" style="width: 900px;">
+               <a href="" class="uppercase bg-blue-500 px-3 py-2 rounded font-semibold text-white">Html</a>
+            </div>
+
+            <div class="bg-gray-100 box rounded-lg" id="box" style="width: 900px;">
+               <pre>
+                  <code class="language-html line-numbers" data-prismjs-copy="Copy the code snippet">
+                     &lt;div class=&quot;p-4 mb-4 text-sm text-blue-700 bg-blue-100 rounded-lg dark:bg-blue-200 dark:text-blue-800&quot; role=&quot;alert&quot;&gt;
+                        &lt;span class=&quot;font-medium&quot;&gt;Info alert!&lt;/span&gt; Change a few things up and try submitting again.
+                        &lt;/div&gt;
+                        &lt;div class=&quot;p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800&quot; role=&quot;alert&quot;&gt;
+                        &lt;span class=&quot;font-medium&quot;&gt;Danger alert!&lt;/span&gt; Change a few things up and try submitting again.
+                        &lt;/div&gt;
+                        &lt;div class=&quot;p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800&quot; role=&quot;alert&quot;&gt;
+                        &lt;span class=&quot;font-medium&quot;&gt;Success alert!&lt;/span&gt; Change a few things up and try submitting again.
+                        &lt;/div&gt;
+                        &lt;div class=&quot;p-4 mb-4 text-sm text-yellow-700 bg-yellow-100 rounded-lg dark:bg-yellow-200 dark:text-yellow-800&quot; role=&quot;alert&quot;&gt;
+                        &lt;span class=&quot;font-medium&quot;&gt;Warning alert!&lt;/span&gt; Change a few things up and try submitting again.
+                        &lt;/div&gt;
+                        &lt;div class=&quot;p-4 text-sm text-gray-700 bg-gray-100 rounded-lg dark:bg-gray-700 dark:text-gray-300&quot; role=&quot;alert&quot;&gt;
+                        &lt;span class=&quot;font-medium&quot;&gt;Dark alert!&lt;/span&gt; Change a few things up and try submitting again.
+                     &lt;/div&gt;
+                  </code>
+               </pre>
+            </div>
+
+         </section>
+
+   
+        </div>
+
+    </main>
+    
+</div>
+    
+
+
+<script src="/js/prism.js"></script> 
+<script src="/js/app.js"></script>
+
+</body>
+</html>
